@@ -1,1 +1,143 @@
-<!DOCTYPE html><html><body><h1>LifeLog Daily Report</h1></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LifeLog Report — 2026-06-28</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #0d1117; color: #c9d1d9; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #58a6ff; font-size: 1.6em; margin-bottom: 5px; }
+h2 { color: #f0883e; font-size: 1.2em; margin: 25px 0 10px; border-bottom: 1px solid #30363d; padding-bottom: 5px; }
+h3 { color: #8b949e; font-size: 1em; margin: 15px 0 8px; }
+.header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; flex-wrap: wrap; }
+.header .date { color: #8b949e; font-size: 0.9em; }
+.header .user { color: #484f58; font-size: 0.8em; }
+.kpi-row { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+.kpi { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 15px 18px; flex: 1; min-width: 130px; }
+.kpi .label { color: #8b949e; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.5px; }
+.kpi .value { font-size: 1.7em; font-weight: bold; color: #58a6ff; }
+.kpi .value.dim { color: #484f58; }
+.kpi .sub { color: #8b949e; font-size: 0.8em; }
+.section { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin-bottom: 15px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+@media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.85em; }
+th { text-align: left; padding: 8px; color: #8b949e; border-bottom: 1px solid #30363d; }
+td { padding: 8px; border-bottom: 1px solid #21262d; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tag { display: inline-block; background: #21262d; color: #8b949e; padding: 2px 8px; border-radius: 4px; font-size: 0.75em; margin: 2px; }
+.score-bar { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+.score-bar .bar-bg { flex: 1; height: 8px; background: #21262d; border-radius: 4px; overflow: hidden; }
+.score-bar .bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+.score-bar .bar-label { width: 50px; font-size: 0.8em; color: #8b949e; }
+.score-bar .bar-value { width: 40px; font-size: 0.85em; font-weight: bold; text-align: right; }
+.timeline { position: relative; padding-left: 20px; }
+.timeline::before { content: ''; position: absolute; left: 6px; top: 0; bottom: 0; width: 2px; background: #30363d; }
+.timeline-item { position: relative; margin-bottom: 12px; }
+.timeline-item::before { content: ''; position: absolute; left: -17px; top: 5px; width: 8px; height: 8px; background: #58a6ff; border-radius: 50%; }
+.timeline-item .time { color: #58a6ff; font-size: 0.8em; font-weight: bold; }
+.timeline-item .desc { font-size: 0.85em; color: #c9d1d9; }
+.list-compact { list-style: none; padding: 0; }
+.list-compact li { padding: 4px 0; font-size: 0.85em; border-bottom: 1px solid #21262d; }
+.list-compact li:last-child { border-bottom: none; }
+.no-data { color: #484f58; font-size: 0.85em; padding: 10px; font-style: italic; }
+.insight { background: #1c2128; border-left: 3px solid #f0883e; padding: 10px 15px; margin: 10px 0; font-size: 0.9em; }
+.footer { text-align: center; color: #484f58; font-size: 0.75em; margin-top: 30px; padding: 15px 0; }
+.weekly-chart { display: flex; align-items: flex-end; gap: 4px; height: 80px; margin: 10px 0; }
+.weekly-chart .bar { flex: 1; background: #58a6ff; border-radius: 3px 3px 0 0; min-width: 20px; position: relative; }
+.weekly-chart .bar-label { position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%); font-size: 0.65em; color: #8b949e; white-space: nowrap; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>LifeLog Daily Report</h1>
+    <span class="user">園田林太朗</span>
+  </div>
+  <span class="date">2026-06-28 (日)</span>
+</div>
+
+<div class="kpi-row">
+<div class="kpi"><div class="label">健康スコア</div><div class="value" style="color:#f0883e">64</div><div class="sub">/100</div></div>
+<div class="kpi"><div class="label">睡眠</div><div class="value dim">--</div><div class="sub">データなし</div></div>
+<div class="kpi"><div class="label">あすけん</div><div class="value" style="color:#f0883e">64点</div><div class="sub">0kcal摂取</div></div>
+<div class="kpi"><div class="label">タスク完了</div><div class="value">0</div><div class="sub">残56件</div></div>
+<div class="kpi"><div class="label">CC Sessions</div><div class="value">25</div><div class="sub">1629msgs</div></div>
+</div>
+
+<h2>① ライフログサマリー</h2>
+<div class="section">
+<table>
+<tr><th style="width:120px">項目</th><th style="width:120px">値</th><th>詳細</th></tr>
+<tr><td>睡眠</td><td colspan="2" class="no-data">データなし</td></tr>
+<tr><td>食事(あすけん)</td><td>64点</td><td></td></tr>
+</table>
+</div>
+<h2>② 行動パターン分析</h2>
+<div class="section">
+<h3>タイムライン</h3>
+<div class="timeline">
+<div class="timeline-item">
+  <span class="time">16:10</span>
+  <div class="desc"><strong>おはよう！</strong> — 多少深酒したからか、よく寝れた。それじゃダメなんだけど。睡眠課題が続いている</div>
+</div>
+</div>
+<div class="insight">遅起き傾向 — 正午以降の活動開始。前日の飲酒や夜更かしの影響の可能性</div>
+</div>
+<h2>③ 生産性レポート</h2>
+<div class="grid-2">
+<div class="section">
+<h3>Claude Code 使用量</h3>
+<table>
+<tr><td>セッション数</td><td class="num">25</td></tr>
+<tr><td>総メッセージ数</td><td class="num">1629</td></tr>
+<tr><td>平均メッセージ/セッション</td><td class="num">65</td></tr>
+</table>
+</div>
+<div class="section">
+<h3>タスク</h3>
+<table><tr><td>新規登録</td><td class="num">0件</td></tr>
+<tr><td>完了</td><td class="num">0件</td></tr>
+<tr><td>残タスク</td><td class="num">56件</td></tr>
+<tr><td>期限超過</td><td class="num" style="color:#f85149">32件</td></tr></table>
+
+</div>
+</div>
+<h2>④ コンテンツ消費分析</h2>
+<div style="margin-bottom:10px"><span class="tag">YouTube 1</span> <span class="tag">ブックマーク 11</span></div>
+<div class="grid-2">
+<div class="section"><h3>YouTube いいね (1件)</h3><ul class="list-compact"><li>農民が天下統一！？豊臣秀吉の日本史最大の成り上がり伝説が凄すぎる</li></ul></div>
+<div class="section"><h3>X ブックマーク (11件)</h3><p style="color:#8b949e;font-size:0.85em">11件のブックマークを保存</p></div>
+</div>
+<h2>⑤ 健康スコア</h2>
+<div class="section">
+<div style="text-align:center;margin-bottom:15px">
+  <span style="font-size:2.5em;font-weight:bold;color:#f0883e">64</span>
+  <span style="color:#8b949e;font-size:1.2em"> / 100</span>
+</div>
+<div class="score-bar">
+  <span class="bar-label">🛏 睡眠</span>
+  <div class="bar-bg"><div class="bar-fill" style="width:0%"></div></div>
+  <span class="bar-value dim">--</span>
+</div>
+<div class="score-bar">
+  <span class="bar-label">🍽 食事</span>
+  <div class="bar-bg"><div class="bar-fill" style="width:64%;background:#f0883e"></div></div>
+  <span class="bar-value" style="color:#f0883e">64</span>
+</div>
+<div class="score-bar">
+  <span class="bar-label">🏋 運動</span>
+  <div class="bar-bg"><div class="bar-fill" style="width:0%"></div></div>
+  <span class="bar-value dim">--</span>
+</div>
+</div>
+
+
+<div class="footer">
+  Auto-generated at 2026-06-29 16:27 — LifeLog Daily Report System
+</div>
+
+</body>
+</html>
