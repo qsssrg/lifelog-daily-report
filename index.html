@@ -35,7 +35,7 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .timeline { position: relative; padding-left: 20px; }
 .timeline::before { content: ''; position: absolute; left: 6px; top: 0; bottom: 0; width: 2px; background: #30363d; }
 .timeline-item { position: relative; margin-bottom: 12px; }
-.timeline-item::before { content: ''; position: absolute; left: -17px; top: 5px; width: 8px; height: 8px; background: #58a6ff; border-radius: 50%; }
+.timeline-item::before { content: ''; position: absolute; left: -17px; top: 5px; width: 8px; height: 8px; background: var(--dot-color, #58a6ff); border-radius: 50%; }
 .timeline-item .time { color: #58a6ff; font-size: 0.8em; font-weight: bold; }
 .timeline-item .desc { font-size: 0.85em; color: #c9d1d9; }
 .list-compact { list-style: none; padding: 0; }
@@ -85,11 +85,16 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 </div>
 <h2>② 行動パターン分析</h2>
 <div class="section">
-<h3>タイムライン</h3>
+<h3>統合タイムライン</h3>
+<div style="font-size:0.75em;margin-bottom:10px;display:flex;gap:12px;flex-wrap:wrap"><span style="color:#a371f7">🛏 睡眠</span> <span style="color:#8b949e">💬 ふりかえり</span></div>
 <div class="timeline">
-<div class="timeline-item">
-  <span class="time">06:51</span>
-  <div class="desc"><strong>おはよう！</strong> — 昨日までより睡眠は良かった。</div>
+<div class="timeline-item" style="--dot-color:#a371f7">
+  <span class="time">🛏 06:32</span>
+  <div class="desc">起床</div>
+</div>
+<div class="timeline-item" style="--dot-color:#8b949e">
+  <span class="time">💬 06:51</span>
+  <div class="desc">おはよう！ — 昨日までより睡眠は良かった。</div>
 </div>
 </div>
 <div class="insight">早起き傾向 — 起床 06:32</div>
@@ -138,7 +143,7 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 
 
 <div class="footer">
-  Auto-generated at 2026-06-29 16:34 — LifeLog Daily Report System
+  Auto-generated at 2026-06-29 16:44 — LifeLog Daily Report System
 </div>
 
 </body>
